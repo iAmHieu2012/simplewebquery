@@ -1,0 +1,112 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #1abc9c;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Input and Button Area */
+#queryInput {
+    width: 80vw;
+    max-width: 800px;
+    height: 150px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    resize: vertical;
+    transition: border-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#queryInput:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+#executeBtn {
+    padding: 12px 25px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 4px #16a085;
+    margin-bottom: 30px;
+}
+
+#executeBtn:hover {
+    background-color: #16a085;
+}
+
+#executeBtn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #16a085;
+}
+
+/* Table Container and Message Styling */
+#tableContainer {
+    width: 90vw;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#tableContainer p {
+    padding: 10px;
+    color: #666;
+    text-align: center;
+}
+
+#tableContainer p[style*="red"] {
+    color: #e74c3c !important;
+    font-weight: bold;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ecf0f1; /* Light border */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping */
+}
+
+tr:hover {
+    background-color: #e8f6f3; /* Highlight row on hover */
+}
